@@ -4,7 +4,7 @@ A simplified YouTube experience — just the video, the title, and a search bar.
 
 ## What is this?
 
-YTSimple is a Chrome extension that strips YouTube down to what actually matters. No ads, no recommendations, no comments, no sidebar, no distractions. You open YouTube, you search for something, you watch it. That's it.
+YTSimple is a Chrome extension that strips YouTube down to what actually matters. No recommendations, no comments, no sidebar, no distractions. You open YouTube, you search for something, you watch it. That's it.
 
 ## Features
 
