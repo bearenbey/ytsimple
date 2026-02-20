@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f0f0f;
+  font-family: "Segoe UI", "Roboto", Arial, sans-serif;
+}
+
+.popup {
+  padding: 14px 18px;
+}
+
+.popup-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.3px;
+  white-space: nowrap;
+}
+
+.title-accent {
+  color: #ff0000;
+}
+
+.toggle {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #333;
+  border-radius: 20px;
+  transition: background 0.25s ease;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background: #666;
+  border-radius: 50%;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.toggle input:checked + .slider {
+  background: rgba(255, 0, 0, 0.3);
+}
+
+.toggle input:checked + .slider::before {
+  transform: translateX(16px);
+  background: #ff0000;
+}
